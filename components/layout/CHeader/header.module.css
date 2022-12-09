@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+    align-items: center;
+    padding: 0 31px;
+    height: 128px;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    background-color: #FFFFFF;
+    border: 2px solid #BCE3C9;
+    border-radius: 5px;
+    width: 700px;
+    height: 50px;
+}
