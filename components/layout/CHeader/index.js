@@ -8,28 +8,33 @@ import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import ChangeCircleOutlinedIcon from '@mui/icons-material/ChangeCircleOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import CMenu from './CMenu';
 
 const CHeader = () => {
     const menu = [
         {
             icon: PermIdentityOutlinedIcon,
             label:'Account',
-            link:''
+            link:'',
+            count:'',
         },
         {
             icon: ChangeCircleOutlinedIcon,
             label:'Compare',
-            link:''
+            link:'',
+            count:'',
         },
         {
             icon: FavoriteBorderOutlinedIcon,
             label:'Wishlist',
-            link:''
+            link:'',
+            count: 5,
         },
         {
             icon: ShoppingCartOutlinedIcon,
             label:'Cart',
-            link:''
+            link:'',
+            count: 4,
         },
     ];
 
@@ -55,7 +60,15 @@ const CHeader = () => {
                 </div>
             </div>
             <div className={style.headerRight}>
-
+                {menu.map((item, index) => (
+                    <CMenu 
+                        link = {item.link}
+                        Icon = {item.icon}
+                        label = {item.label}
+                        key = {index}
+                        count = {item.count}
+                    />
+                ))}
             </div>
         </div>
     )
