@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 import Image from 'next/image';
-import {categories, list} from '../../../../mock/categories'
+import {categories, list, hotCategory} from '../../../../mock/categories'
 
 
 const mont = Montserrat({ subsets: ['latin'] });
@@ -40,11 +40,18 @@ const CCategories = () => {
                 
             </div>
             <div className={style.hotCategory}>
-                <div className={style.categoryItem}>
-                    <div>
-                        Everyday Fresh & Clean with Our Products
+                {hotCategory.map((item, index) => (
+                    <div key={index} className={style.categoryItem} style = {{background: `${item.color} url(${item.img}) no-repeat right bottom`}}>
+                        <div className={style.description}>
+                            {item. title}
+                        </div>
+                        <button className={style.btnShop}>
+                            <span>Shop Now</span>
+                            <ArrowForwardOutlinedIcon/>
+                        </button>
                     </div>
-                </div>
+                ))}
+                
             </div>
         </div>
     )

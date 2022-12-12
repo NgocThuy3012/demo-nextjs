@@ -35,7 +35,7 @@ export const list = [
         img: '/img/cat-11.svg',
         name: 'Peach',
         count: '17 items',
-        color: '#FFFCEB;',
+        color: '#FFFCEB',
     },
     {
         img: '/img/cat-12.svg',
@@ -89,19 +89,19 @@ export const list = [
 
 export const hotCategory = [
     {
-        img: '',
+        img: '/img/Cms-04.svg',
         title: 'Everyday Fresh & Clean with Our Products',
         color: '#F0E8D5',
         active: '',
     },
     {
-        img: '',
+        img: '/img/Cat-01.svg',
         title: 'Make your Breakfast Healthy and Easy',
         color: '#F3E8E8',
         active: '',
     },
     {
-        img: '',
+        img: '/img/Cms-03.svg',
         title: 'The best Organic Products Online',
         color: '#E7EAF3',
         active: '',

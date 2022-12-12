@@ -103,6 +103,36 @@
 }
 
 .categoryItem {
-    background: #F0E8D5;
+    padding: 75px 48px;
     border-radius: 10px;
+    width: 480px;
+    height: 300px;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+    width: 271px;
+    height: 92px;
+    margin-bottom: 23px;
+}
+
+.btnShop {
+    background: #3BB77E;
+    box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
 }
