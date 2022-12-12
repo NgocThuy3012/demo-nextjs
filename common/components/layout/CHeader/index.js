@@ -48,7 +48,9 @@ const CHeader = () => {
                     height={66}
                 />
                 <div className={style.search}>
-                    <CDropdown/>
+                    <CDropdown
+                        label = 'All Categories'
+                    />
                     <div className={style.line}></div>
                     <div className={style.input}>
                         <InputBase

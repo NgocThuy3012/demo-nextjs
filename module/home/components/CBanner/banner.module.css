@@ -1,0 +1,64 @@
+.main {
+    background: rgba(253, 192, 64, 0.2);
+    border-radius: 30px;
+    background-image: url("../../../../public/figure.png");
+    padding: 97px;
+    background-repeat: no-repeat;
+}
+
+.content{
+    width: 727px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+    height: 161px;
+    margin-bottom: 33px;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 26px;
+    color: #7E7E7E;
+    margin-bottom: 68px;
+}
+
+.sendMail {
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: max-content;
+    display: flex;
+    align-item: center;
+}
+
+.inputMail {
+    padding: 17px 26px;
+    width: max-content;
+    display: flex;
+    align-item: center;
+}
+
+.icon {
+    color: #7E7E7E;
+    margin-right: 15px;
+}
+
+.btnSend {
+    background: #3BB77E;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.0004em;
+    color: #FFFFFF;
+    border: none;
+    padding: 17px 37px;
+}

@@ -7,5 +7,14 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-    color: #253D4E;
+   
 }
+
+.icon {
+    margin-left: 8px;
+}
+
+.iconleft {
+    margin-right: 5px;
+}
+
