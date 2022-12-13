@@ -1,0 +1,18 @@
+.main {
+    margin-top: 68px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+}
