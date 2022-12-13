@@ -1,11 +1,11 @@
 import style from './products.module.css';
-import {Montserrat} from '@next/font/google';
+import {Quicksand} from '@next/font/google';
 import clsx from 'clsx';
 import {categories} from '../../../../mock/categories'
 import {products} from '../../../../mock/product'
 import CProduct from '../../../../common/components/layout/CProduct'
 
-const mont = Montserrat({ subsets: ['latin'] });
+const quick = Quicksand({ subsets: ['latin'] });
 
 const CProducts = () => {
     return (
@@ -16,7 +16,7 @@ const CProducts = () => {
                 </div>
                 <div>
                     {categories.map((item,index)=>(
-                        <span key={index} className={clsx(style.item, mont.className, {[style.active]: item.active ?? false})}>
+                        <span key={index} className={clsx(style.item, quick.className, {[style.active]: item.active ?? false})}>
                             {item.label}
                         </span>
                     ))}

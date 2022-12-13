@@ -6,6 +6,7 @@ import {Quicksand} from '@next/font/google';
 import clsx from 'clsx'
 import CCategories from '../components/CCategories'
 import CProducts from '../components/CProducts'
+import CBestSellers from '../components/CBestsellers'
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -18,6 +19,7 @@ const HomePage = () => {
                 <CBanner/>
                 <CCategories/>
                 <CProducts/>
+                <CBestSellers/>
             </div>
         </>
     )

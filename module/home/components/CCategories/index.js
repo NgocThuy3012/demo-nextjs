@@ -1,12 +1,12 @@
 import style from './categories.module.css';
-import {Montserrat} from '@next/font/google';
+import {Quicksand} from '@next/font/google';
 import clsx from 'clsx';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 import Image from 'next/image';
 import {categories, list, hotCategory} from '../../../../mock/categories'
 
-const mont = Montserrat({ subsets: ['latin'] });
+const quick = Quicksand({ subsets: ['latin'] });
 
 const CCategories = () => {
     
@@ -18,7 +18,7 @@ const CCategories = () => {
                 </div>
                 <div>
                     {categories.map((item,index)=>(
-                        <span key={index} className={clsx(style.item, mont.className, {[style.active]: item.active ?? false})}>
+                        <span key={index} className={clsx(style.item, quick.className, {[style.active]: item.active ?? false})}>
                             {item.label}
                         </span>
                     ))}

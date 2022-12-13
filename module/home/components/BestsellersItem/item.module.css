@@ -2,13 +2,17 @@
     background: #FFFFFF;
     border: 1px solid #E5E5E5;
     border-radius: 15px;
-    padding: 20px;
+    padding: 45px 20px 20px 20px;
     position: relative;
 }
 
 .product:hover {
     border: 1px solid #BCE3C9;
     box-shadow: 20px 20px 40px rgba(24, 24, 24, 0.07);
+}
+
+.product:hover > .btnAdd{
+    background: #FDC040;
 }
 
 .productImg {
@@ -42,7 +46,7 @@
    font-size: 12px;
    line-height: 18px;
    color: #7E7E7E;
-  
+   margin: 10px 0px;
 }
 
 .rating {
@@ -92,20 +96,6 @@
 
 }
 
-.addBtn {
-    background: #DEF9EC;
-    border-radius: 4px;
-    border: none;
-    padding: 5px 11px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.0004em;
-    color: #3BB77E;
-    display: block;
-}
-
 .iconBtn {
     font-size: 13px;
     margin-left: 4px;
@@ -119,7 +109,6 @@
     padding: 10px 15px;
     gap: 10px;
     position: absolute;
-    width: 58px;
     height: 32px;
     left: 0px;
     top: 20px;
@@ -142,4 +131,55 @@
 
 .sale {
     background: #FDC040;
+}
+
+.line {
+    background: #E5E5E5;
+    border-radius: 2px;
+    height: 4px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.highlight {
+    background: #3BB77E;
+    position: absolute;
+    border-radius: 2px;
+    height: 4px;
+    top: 0;
+    left: 0;
+    width: 65%;
+}
+
+.sold {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #253D4E;
+}
+
+.btnAdd {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 0px;
+    border: none;
+    background: #3BB77E;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.0004em;
+    color: #FFFFFF;
+}
+
+.iconCart {
+    margin-right: 7px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
 }
