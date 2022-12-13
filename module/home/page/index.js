@@ -5,6 +5,7 @@ import style from '../styles/homePage.module.css'
 import {Quicksand} from '@next/font/google';
 import clsx from 'clsx'
 import CCategories from '../components/CCategories'
+import CProduct from '../components/CProduct'
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -16,6 +17,7 @@ const HomePage = () => {
             <div className={clsx(style.content, quicksand.className)}>
                 <CBanner/>
                 <CCategories/>
+                <CProduct/>
             </div>
         </>
     )

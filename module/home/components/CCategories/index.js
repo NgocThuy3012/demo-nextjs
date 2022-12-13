@@ -6,7 +6,6 @@ import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 import Image from 'next/image';
 import {categories, list, hotCategory} from '../../../../mock/categories'
 
-
 const mont = Montserrat({ subsets: ['latin'] });
 
 const CCategories = () => {
@@ -46,7 +45,7 @@ const CCategories = () => {
                             {item. title}
                         </div>
                         <button className={style.btnShop}>
-                            <span>Shop Now</span>
+                            <span className={style.titleShopnow}>Shop Now</span>
                             <ArrowForwardOutlinedIcon/>
                         </button>
                     </div>
