@@ -1,3 +1,64 @@
 .content {
     padding: 33px 31px;
 }
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50.6123px;
+    line-height: 61px;
+    letter-spacing: -0.0004em;
+    color: #1C4037;
+    margin-bottom: 41px;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.7755px;
+    line-height: 33px;
+    color: #2B3D34
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(59, 183, 126, 0.2) url('../../../public/img/baner-bottom.svg');
+    border-radius: 15px;
+    padding: 27px 49px 0px 0px;
+    margin-top: 68px;
+}
+
+.bannercontent {
+    width: 800px;
+    padding: 60px 0px 87px 78px;
+}
+
+.bannerImg {
+    position: relative;
+    
+}
+
+.delivery {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.tomato {
+    position: absolute;
+    top: 0px;
+    right: 276px;
+}
+
+.bellpeper {
+    position: absolute;
+    bottom: -30px;
+    right: 500px;
+}
+
+.garlic {
+    position: absolute;
+    top: 40px;
+    right: 428px;
+}

@@ -30,7 +30,7 @@ const CCategories = () => {
             </div>
             <div className={style.categoryList}>
                 {list.map((item, index) => (
-                    <div key={index} className={clsx(style.category,{[style.activeCategory]: item.active ?? false})} style = {{background: `${item.color}`}}>
+                    <div key={index} className={clsx(style.category)} style = {{background: `${item.color}`}}>
                         <Image src={item.img} alt='' width = {120} height = {120}/>
                         <div className={style.categoryName}>{item.name}</div>
                         <div className={style.count}>{item.count}</div>

@@ -68,6 +68,12 @@
     border-radius: 10px;
 }
 
+.category:hover {
+    background: #F2FCE4;
+    border: 1px solid #81B13D;
+    box-shadow: 20px 20px 40px rgba(24, 24, 24, 0.07);
+}
+
 .categoryName {
     font-style: normal;
     font-weight: 700;
@@ -87,12 +93,6 @@
     text-align: center;
     color: #B6B6B6;
     margin-bottom: 17px;
-}
-
-.activeCategory {
-    background: #F2FCE4;
-    border: 1px solid #81B13D;
-    box-shadow: 20px 20px 40px rgba(24, 24, 24, 0.07);
 }
 
 .hotCategory {
