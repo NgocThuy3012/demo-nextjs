@@ -1,0 +1,49 @@
+.footer {
+    display: grid;
+    justify-content: space-between;
+    padding: 0px 31px;
+    margin-top: 67px;
+    gap: 55px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.footerList {
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+    grid-column: span 2 / span 2;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+    margin-bottom: 29px;
+}
+
+.content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #253D4E;
+    margin: 10px 0px;
+}
+
+.icon {
+    font-size: 16px;
+    line-height: 24px;
+    color: #3BB77E;
+    margin-right: 10px;
+}
+
+.image {
+    display: flex;
+}
+
+.margin {
+    margin: 24px 0px;
+}

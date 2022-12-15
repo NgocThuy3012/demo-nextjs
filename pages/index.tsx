@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import HomePage from '../module/home/page'
+import CHeader from '../common/components/layout/CHeader'
+import CNavbar from '../common/components/layout/CNavbar'
+import CFooter from '../common/components/layout/CFooter'
 
 export default function Home() {
   return (
@@ -13,7 +16,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <CHeader/>
+        <CNavbar/>
         <HomePage/>
+        <CFooter/>
       </main>
 
       
