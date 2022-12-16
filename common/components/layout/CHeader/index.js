@@ -6,7 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { InputBase} from '@mui/material'
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import ChangeCircleOutlinedIcon from '@mui/icons-material/ChangeCircleOutlined';
+import AutorenewOutlinedIcon from '@mui/icons-material/AutorenewOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import CMenu from './CMenu';
 
@@ -19,7 +19,7 @@ const CHeader = () => {
             count:'',
         },
         {
-            icon: ChangeCircleOutlinedIcon,
+            icon: AutorenewOutlinedIcon,
             label:'Compare',
             link:'',
             count:'',

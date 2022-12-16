@@ -11,6 +11,16 @@
     box-shadow: 20px 20px 40px rgba(24, 24, 24, 0.07);
 }
 
+.product:hover > .view {
+    display: flex;
+}
+
+.product:hover > .bottom > .btn > .addBtn{
+    background: #FFFFFF;
+    border: 1px solid #3BB77E;
+    border-radius: 4px;
+}
+
 .productImg {
     display: flex;
     justify-content: center;
@@ -142,4 +152,22 @@
 
 .sale {
     background: #FDC040;
+}
+
+.view {
+    position: absolute;
+    left: 61.18px;
+    top: 93.42px;
+    background: #FFFFFF;
+    border: 1px solid #BCE3C9;
+    box-shadow: 20px 20px 40px rgba(24, 24, 24, 0.07);
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+}
+
+.iconView {
+    padding: 8px 10px 4px 10px;
+    border: 1px solid #BCE3C9;
+    /* transform: rotate(90deg); */
 }

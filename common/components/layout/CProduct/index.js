@@ -3,6 +3,9 @@ import StarOutlinedIcon from '@mui/icons-material/StarOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import style from './product.module.css'
 import clsx from 'clsx'
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import AllInclusiveOutlinedIcon from '@mui/icons-material/AllInclusiveOutlined';
+import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 
 const CProduct = ({product}) => {
     
@@ -33,7 +36,7 @@ const CProduct = ({product}) => {
                     <div className={style.priceNew}>{product.price_new}</div>
                     <div className={style.priceOld}>{product.price_old}</div>
                 </div>
-                <div>
+                <div className={style.btn}>
                     <button className={style.addBtn}>
                         Add 
                         <AddOutlinedIcon className={style.iconBtn}/>
@@ -47,6 +50,17 @@ const CProduct = ({product}) => {
             )}>
                 {product.status[0].title}
             </div>}
+            <div className={style.view}>
+                <div className={style.iconView}>
+                    <FavoriteBorderOutlinedIcon/>
+                </div>
+                <div className={style.iconView}>
+                    <AllInclusiveOutlinedIcon/>
+                </div>
+                <div className={style.iconView}>
+                    <VisibilityOutlinedIcon/>
+                </div>
+            </div>
         </div>
     )
 }
