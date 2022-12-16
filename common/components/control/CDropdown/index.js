@@ -4,10 +4,11 @@ import {Quicksand} from '@next/font/google';
 import clsx from 'clsx'
 import Image from 'next/image';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import Link from 'next/link';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
-const CDropdown = ({label, Icon, data}) => {
+const CDropdown = ({label, Icon, data, link}) => {
     
     return (
         <div className={clsx(style.dropdown, {textWhite: Icon})}>
@@ -29,9 +30,11 @@ const CDropdown = ({label, Icon, data}) => {
                     ))}
                 </div>
                 <div className={style.seeMore}>
+                    <Link href={link} className={style.navigate}>
                         <AddCircleOutlineIcon className={style.iconseeMore}/>
                         <span>More Categories</span>
-                    </div>
+                    </Link>
+                </div>
             </div>}
         </div>
     )

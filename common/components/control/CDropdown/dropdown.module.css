@@ -86,6 +86,11 @@
     line-height: 20px;
     letter-spacing: -0.0004em;
     color: #7E7E7E;
+    align-items: center;
+}
+
+.navigate {
+    display: flex;
 }
 
 .iconseeMore {

@@ -6,10 +6,13 @@ import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 import {datafooter} from '../../../../mock/footer'
 import clsx from 'clsx'
+import {Quicksand} from '@next/font/google'
+
+const quicksand = Quicksand({ subsets: ['latin'] });
 
 const CFooter = () => {
     return (
-        <div className={style.footer}>
+        <div className={clsx(style.footer, quicksand.className)}>
             <div className=''>
                 <Image
                     alt=''

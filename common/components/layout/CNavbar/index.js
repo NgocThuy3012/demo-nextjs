@@ -7,6 +7,7 @@ import LocalFireDepartmentOutlinedIcon from '@mui/icons-material/LocalFireDepart
 import navigation from '../../../routes/navigation'
 import HeadsetMicOutlinedIcon from '@mui/icons-material/HeadsetMicOutlined';
 import {list} from '../../../../mock/categories'
+import Link from 'next/link';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -21,16 +22,17 @@ const CNavbar = () => {
                         label = 'Browse All Categories'
                         Icon = {GridViewIcon}
                         data = {list}
+                        link={'/blog'}
                     />
                 </div>
                 <div className={style.navigation}>
                     <div className={style.menuItem}>
                         <LocalFireDepartmentOutlinedIcon className={style.icon}/>
-                        <span>Hot Deals</span>
+                        <Link href={'#'}>Hot Deals</Link>
                     </div>
                     {navigation.map((nav, index) => (
                         <div key = {index} className={style.menuItem}>
-                            <span>{nav.title}</span>
+                            <Link href={nav.link}>{nav.title}</Link>
                         </div>
                     ))}
                     

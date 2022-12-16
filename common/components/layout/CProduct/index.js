@@ -52,13 +52,13 @@ const CProduct = ({product}) => {
             </div>}
             <div className={style.view}>
                 <div className={style.iconView}>
-                    <FavoriteBorderOutlinedIcon/>
+                    <FavoriteBorderOutlinedIcon className={style.icon}/>
                 </div>
                 <div className={style.iconView}>
-                    <AllInclusiveOutlinedIcon/>
+                    <AllInclusiveOutlinedIcon className={style.icon}/>
                 </div>
                 <div className={style.iconView}>
-                    <VisibilityOutlinedIcon/>
+                    <VisibilityOutlinedIcon className={style.icon}/>
                 </div>
             </div>
         </div>

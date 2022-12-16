@@ -1,7 +1,7 @@
 const navigation = [
     {
         title: 'Home',
-        link: '',
+        link: '/',
         icon: null,
     },
     {
