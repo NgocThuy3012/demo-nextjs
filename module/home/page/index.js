@@ -30,36 +30,6 @@ const HomePage = () => {
                         {` Start You'r Daily Sopping with Nest Mart`}
                         </div>
                     </div>
-                    <div className={style.bannerImg}>
-                        <Image
-                            alt=''
-                            src={'/img/delivery.svg'}
-                            width={418}
-                            height={360}
-                            className={style.delivery}
-                        />
-                        <Image
-                            alt=''
-                            src={'/img/tomato.svg'}
-                            width={203}
-                            height={240}
-                            className={style.tomato}
-                        />
-                        <Image
-                            alt=''
-                            src={'/img/bellpeper.svg'}
-                            width={203}
-                            height={240}
-                            className={style.bellpeper}
-                        />
-                        <Image
-                            alt=''
-                            src={'/img/garlic.svg'}
-                            width={203}
-                            height={240}
-                            className={style.garlic}
-                        />
-                    </div>
                 </div>
             </div>
         </>

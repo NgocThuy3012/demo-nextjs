@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import LocalFireDepartmentOutlinedIcon from '@mui/icons-material/LocalFireDepartmentOutlined';
 import navigation from '../../../routes/navigation'
 import HeadsetMicOutlinedIcon from '@mui/icons-material/HeadsetMicOutlined';
+import {list} from '../../../../mock/categories'
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -19,6 +20,7 @@ const CNavbar = () => {
                     <CDropdown
                         label = 'Browse All Categories'
                         Icon = {GridViewIcon}
+                        data = {list}
                     />
                 </div>
                 <div className={style.navigation}>

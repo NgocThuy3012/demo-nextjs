@@ -33,32 +33,3 @@
     width: 800px;
     padding: 60px 0px 87px 78px;
 }
-
-.bannerImg {
-    position: relative;
-    
-}
-
-.delivery {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.tomato {
-    position: absolute;
-    top: 0px;
-    right: 276px;
-}
-
-.bellpeper {
-    position: absolute;
-    bottom: -30px;
-    right: 500px;
-}
-
-.garlic {
-    position: absolute;
-    top: 40px;
-    right: 428px;
-}
