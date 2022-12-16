@@ -1,0 +1,31 @@
+.discounttime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 11px;
+    gap: 12px;
+}
+
+.time {
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 24px 24px 48px rgba(24, 24, 24, 0.07);
+    border-radius: 6px;
+    padding: 5px 13px;
+}
+
+.number {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28.8px;
+    color: #3BB77E;
+}
+
+.unit {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.4px;
+    color: #7E7E7E;
+    margin-top: -8px;
+}

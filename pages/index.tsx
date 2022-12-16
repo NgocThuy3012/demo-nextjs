@@ -16,10 +16,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <CHeader/>
-        <CNavbar/>
         <HomePage/>
-        <CFooter/>
       </main>
 
       

@@ -5,6 +5,7 @@ import StarOutlinedIcon from '@mui/icons-material/StarOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import {deals} from '../../../../mock/dealsOfTheDays'
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import CCountdown from '../../../../common/components/control/CCountdown'
 
 const quick = Quicksand({ subsets: ['latin'] });
 
@@ -26,24 +27,7 @@ const CDeals = () => {
                 {deals.map((product, index) => (
                     <div key={index} className={style.product} style = {{background: `url(${product.img}) no-repeat`}}>
                         <div className={style.info}>
-                            <div className={style.discounttime}>
-                                <div className={style.time}>
-                                    <div className={style.number}>05</div>
-                                    <div className={style.unit}>Days</div>
-                                </div>
-                                <div className={style.time}>
-                                    <div className={style.number}>06</div>
-                                    <div className={style.unit}>Hours</div>
-                                </div>
-                                <div className={style.time}>
-                                    <div className={style.number}>56</div>
-                                    <div className={style.unit}>Mins</div>
-                                </div>
-                                <div className={style.time}>
-                                    <div className={style.number}>18</div>
-                                    <div className={style.unit}>Sec</div>
-                                </div>
-                            </div>
+                           <CCountdown date = {product.date}/>
                             <div className={style.infodetail}>
                                 <div className={style.productName}>{product.name}</div>
                                 <div className={style.ratings}>
