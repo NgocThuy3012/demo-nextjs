@@ -1,3 +1,5 @@
+import exp from "constants"
+
 export const tags = [
     {
         name: 'Shopping',
@@ -74,5 +76,58 @@ export const cards = [
     {
         img: '/img/card6.jpg',
         name: 'Dessert',
+    },
+]
+
+export const trending = [
+    {
+        img: '/img/t1.jpg',
+        name: 'Caprese Chicken with Smashed Potatoes',
+    },
+    {
+        img: '/img/t2.jpg',
+        name: 'The Best Soft Chocolate Chip Cookies',
+    },
+    {
+        img: '/img/t3.jpg',
+        name: 'Smoky Beans & Greens Tacos with Aji Verde',
+    },
+    {
+        img: '/img/t4.jpg',
+        name: 'Harissa Chickpeas with Whipped Feta',
+    },
+    {
+        img: '/img/t5.jpg',
+        name: 'Summer Quinoa Salad Jars with Lemon Dill Dressing',
+    },
+]
+
+export const images = [
+    {
+        src: '/img/g1.jpg'
+    },
+    {
+        src: '/img/g2.jpg'
+    },
+    {
+        src: '/img/g3.jpg'
+    },
+    {
+        src: '/img/g4.jpg'
+    },
+    {
+        src: '/img/g5.jpg'
+    },
+    {
+        src: '/img/g6.jpg'
+    },
+    {
+        src: '/img/g7.jpg'
+    },
+    {
+        src: '/img/g8.jpg'
+    },
+    {
+        src: '/img/g9.jpg'
     },
 ]

@@ -12,6 +12,8 @@ import CBlog from '../components/CBlog';
 import { InputBase } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import CCard from '../components/CCard';
+import CTrending from '../components/CTrending';
+import CGallery from '../components/CGallery';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -74,7 +76,10 @@ const MBlog = () => {
                 </div>
                 <div>
                     <CCard/>
+                    <CTrending/>
+                    <CGallery/>
                 </div>
+                
             </div>
         </div>
     )

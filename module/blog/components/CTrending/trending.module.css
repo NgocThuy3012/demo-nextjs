@@ -1,0 +1,52 @@
+.main {
+    margin: 55px 0px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 15px;
+    padding: 0px 29px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+    border-bottom: 1px solid #D7DEDB;
+    padding: 14px 0px;
+}
+
+.list {
+    padding: 41px 0px 20px 0px;
+}
+
+.item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 27px;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #2B3D34;
+}
+
+.time {
+    color: #B6B6B6;
+}
