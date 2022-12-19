@@ -131,3 +131,28 @@ export const images = [
         src: '/img/g9.jpg'
     },
 ]
+
+export const popularTags = [
+    {
+        name:'Cabbage',
+    },
+    {
+        name:'Broccoli',
+        active: true,
+    },
+    {
+        name:'Smoothie',
+    },
+    {
+        name:'Fruit',
+    },
+    {
+        name:'Eat',
+    },
+    {
+        name:'Salad',
+    },
+    {
+        name:'Appetizer',
+    },
+]

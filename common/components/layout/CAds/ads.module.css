@@ -1,0 +1,56 @@
+.main {
+    background: #EDF1F4 url('../../../../public/img/ads.svg') no-repeat bottom;
+    border-radius: 20px;
+    padding: 34px 0px 34px 44px;
+    height: 512px;
+}
+
+.label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.0004em;
+    color: #FDC040;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #7E7E7E;
+    width: 200px;
+    margin: 4px 0px 6px 0px;
+}
+
+.btnShop {
+    background: #3BB77E;;
+    box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    left: 48px;
+    bottom: 48px;
+}
+
+.titleShopnow {
+    margin-right: 10px;
+}

@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 13px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #253D4E;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+}
+
+.time {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #B6B6B6;
+    display: flex;
+    gap: 25px;
+}

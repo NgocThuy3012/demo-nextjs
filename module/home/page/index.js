@@ -1,4 +1,4 @@
-import CBanner from '../components/CBanner'
+import CBanner from '../../../common/components/layout/CBanner'
 import style from '../styles/homePage.module.css'
 import {Quicksand} from '@next/font/google'
 import clsx from 'clsx'
@@ -15,7 +15,14 @@ const HomePage = () => {
     return (
         <>
             <div className={clsx(style.content, quicksand.className)}>
-                <CBanner/>
+                <CBanner 
+                    title = 'Don’t miss amazing grocery deals'
+                    description = 'Sign up for the daily newsletter'
+                    img = '/figure.png'
+                    size = '72'
+                    linegHeight = '78'
+                    color = 'rgba(253, 192, 64, 0.2)'
+                />
                 <CCategories/>
                 <CProducts/>
                 <CBestSellers/>

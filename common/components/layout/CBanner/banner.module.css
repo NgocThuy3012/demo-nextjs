@@ -1,9 +1,6 @@
 .main {
-    background: rgba(253, 192, 64, 0.2);
     border-radius: 30px;
-    background-image: url("../../../../public/figure.png");
-    padding: 97px;
-    background-repeat: no-repeat;
+    padding: 50px;
 }
 
 .content{
@@ -13,11 +10,8 @@
 .title {
     font-style: normal;
     font-weight: 700;
-    font-size: 72px;
-    line-height: 78px;
     letter-spacing: -0.0004em;
     color: #253D4E;
-    height: 161px;
     margin-bottom: 33px;
 }
 

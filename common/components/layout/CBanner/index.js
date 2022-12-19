@@ -2,15 +2,15 @@ import style from './banner.module.css'
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import {InputBase} from '@mui/material'
 
-const CBanner = () => {
+const CBanner = ({title, description, img, size, linegHeight, color}) => {
     return (
-        <div className={style.main}>
+        <div className={style.main} style={{background: `${color} url(${img}) no-repeat right bottom`}}>
             <div className={style.content}>
-                <div className={style.title}>
-                    Don’t miss amazing grocery deals
+                <div className={style.title} style={{fontSize: `${size}px`, linegHeight: `${linegHeight}px`}}>
+                   {title}
                 </div>
                 <div className={style.description}>
-                    Sign up for the daily newsletter 
+                    {description}
                 </div>
                 <div className={style.sendMail}>
                     <div className={style.inputMail}>

@@ -11,9 +11,12 @@ import Image from 'next/image';
 import CBlog from '../components/CBlog';
 import { InputBase } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
-import CCard from '../components/CCard';
-import CTrending from '../components/CTrending';
-import CGallery from '../components/CGallery';
+import CCard from '../../../common/components/layout/CCard';
+import CTrending from '../../../common/components/layout/CTrending';
+import CGallery from '../../../common/components/layout/CGallery';
+import CPopularTags from '../../../common/components/layout/CPopularTags';
+import CBanner from '../../../common/components/layout/CBanner';
+import CAds from '../../../common/components/layout/CAds';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -78,9 +81,19 @@ const MBlog = () => {
                     <CCard/>
                     <CTrending/>
                     <CGallery/>
+                    <CPopularTags/>
+                    <CAds/>
                 </div>
                 
             </div>
+            <CBanner 
+                title = 'Stay home & get your daily needs from our shop'
+                description = "Start You'r Daily Sopping with Nest Mart"
+                img = '/img/banner2.jpg'
+                size = '40'
+                linegHeight = '48'
+                color = 'rgba(59, 183, 126, 0.2)'
+            />
         </div>
     )
 }

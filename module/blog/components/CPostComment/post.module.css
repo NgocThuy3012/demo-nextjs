@@ -1,0 +1,41 @@
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+}
+
+.description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #7E7E7E;
+    margin-bottom: 48px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 26px;
+    margin-bottom: 34px;
+}
+
+.btn {
+    background: #253D4E;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.0004em;
+    color: #FFFFFF;
+    margin-top: 29px;
+    padding: 22px 39px;
+    border: none;
+}
