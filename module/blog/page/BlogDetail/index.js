@@ -123,7 +123,16 @@ const MBlogDetail = () => {
                             <CComment/>
                         </div>
                         <CPostComment/>
-                            
+                        <div className={style.countComments}>3 Comments</div>
+                        <div className={style.commentItem}>
+                            <CComment/>
+                        </div>
+                        <div className={style.commentItem}>
+                            <CComment/>
+                        </div>
+                        <div className={style.commentItem}>
+                            <CComment/>
+                        </div>
                     </div>
                 </div>
                 <div>

@@ -192,3 +192,17 @@
     padding: 23px 29px;
     margin: 50px 0px 42px 0px;
 }
+
+.countComments {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.0004em;
+    color: #7E7E7E;
+    margin: 35px 0px;
+}
+
+.commentItem {
+    margin-bottom: 24px;
+}

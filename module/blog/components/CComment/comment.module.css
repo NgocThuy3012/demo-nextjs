@@ -28,3 +28,14 @@
     display: flex;
     gap: 25px;
 }
+
+.reply {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #B6B6B6;
+    margin-top: 3px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+}

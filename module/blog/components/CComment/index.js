@@ -18,6 +18,7 @@ const CComment = () => {
                 <div>
                     Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
                 </div>
+                <div className={style.reply}>Reply here</div>
             </div>
         </div>
     )

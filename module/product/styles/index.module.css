@@ -1,0 +1,162 @@
+.main {
+    padding: 0px 31px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #7E7E7E;
+    margin: 24px 0px;
+}
+
+.active {
+    color: #3BB77E;
+} 
+
+.contentLeft {
+    grid-column: span 3 / span 3;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    gap: 24px;
+}
+
+.productInfo {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+
+.productImage {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 15px;
+    padding: 138px 30px;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+}
+
+.inStock {
+    background: #DEF9EC;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.0004em;
+    color: #3BB77E;
+    width: max-content;
+    padding: 5px 11px;
+    margin-bottom: 28px;
+}
+
+.ratings {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #7E7E7E;
+    margin: 32px 0px 24px 0px;
+}
+ 
+.rating {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     color: #7E7E7E;
+}
+ 
+.star {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     color: #FDC040;
+}
+
+.price {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.shortDescription {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #7E7E7E;
+    margin: 32px 0px 37px 0px;
+}
+
+.priceNew {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: -0.0004em;
+    color: #3BB77E;
+}
+
+.priceOld {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    letter-spacing: -0.0004em;
+    color: #B6B6B6;
+    text-decoration: line-through;
+}
+
+.btnAdd {
+    display: flex;
+    justify-content: center;
+    padding: 17px 22px;
+    border: none;
+    background: #3BB77E;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.0004em;
+    color: #FFFFFF;
+}
+
+.iconCart {
+    margin-right: 7px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.btnGroup {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon {
+    background: #FFFFFF;
+    border: 1px solid #F2F3F4;
+    border-radius: 5px;
+    color: #B6B6B6;
+    padding: 16px;
+    text-align: center;
+}
