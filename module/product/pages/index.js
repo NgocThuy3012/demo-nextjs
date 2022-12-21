@@ -13,6 +13,7 @@ import AllInclusiveOutlinedIcon from '@mui/icons-material/AllInclusiveOutlined';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CFilter from '../components/CFilter';
+import CAds from '../../../common/components/layout/CAds';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -158,6 +159,7 @@ const MProduct = () => {
                 <div className={style.sidebar}>
                     <CFilter/>
                     <CPopularTags/>
+                    <CAds/>
                 </div>
             </div>
             <CBanner 

@@ -1,10 +1,6 @@
 import { styled } from '@mui/material/styles';
 import { Slider } from '@mui/material'
-import { useState } from 'react';
 
-const valuetext = (value) => {
-    return `$${value}`;
-}
 
 const AirbnbSlider = styled(Slider)(({ theme }) => ({
     color: '#3BB77E',
@@ -36,12 +32,15 @@ const AirbnbSlider = styled(Slider)(({ theme }) => ({
     },
   }));
 
-const CSlider = ({value, handleChange}) => {
+  
+const CSlider = ({value, handleChange, valueLabelFormat, calculateValue}) => {
     return (
         <AirbnbSlider
-            getAriaValueText={valuetext}
+            getAriaValueText={valueLabelFormat}
             getAriaLabel={() => 'Temperature range'}
             valueLabelDisplay="auto"
+            valueLabelFormat={valueLabelFormat}
+            scale={calculateValue}
             value={value}
             onChange={handleChange}
             disableSwap
