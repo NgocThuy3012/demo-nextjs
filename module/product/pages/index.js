@@ -10,6 +10,9 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import CBanner from '../../../common/components/layout/CBanner';
 import AllInclusiveOutlinedIcon from '@mui/icons-material/AllInclusiveOutlined';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import CFilter from '../components/CFilter';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -26,13 +29,55 @@ const MProduct = () => {
             <div className={style.content}>
                 <div className={style.contentLeft}>
                     <div className={style.productInfo}> 
-                        <div className={style.productImage}>
-                            <Image
-                                alt=''
-                                src={'/img/product.jpg'}
-                                width={586}
-                                height={421}
-                            />
+                        <div>
+                            <div className={style.productImage}>
+                                <Image
+                                    alt=''
+                                    src={'/img/product.jpg'}
+                                    width={586}
+                                    height={421}
+                                />
+                            </div>
+                            <div className={style.thumb}>
+                                <div className={clsx(style.iconNavigate, style.navActive)}>
+                                    <ArrowBackIcon/>
+                                </div>
+                                <div className={clsx(style.thumbActive, style.thumbItem)}>
+                                    <Image
+                                        alt=''
+                                        src={'/img/thumb1.jpg'}
+                                        width={106}
+                                        height={84}
+                                    />
+                                </div>
+                                <div className={style.thumbItem}>
+                                    <Image
+                                        alt=''
+                                        src={'/img/thumb2.jpg'}
+                                        width={106}
+                                        height={84}
+                                    />
+                                </div>
+                                <div className={style.thumbItem}>
+                                    <Image
+                                        alt=''
+                                        src={'/img/thumb3.jpg'}
+                                        width={106}
+                                        height={84}
+                                    />
+                                </div>
+                                <div className={style.thumbItem}>
+                                    <Image
+                                        alt=''
+                                        src={'/img/thumb4.jpg'}
+                                        width={106}
+                                        height={84}
+                                    />
+                                </div>
+                                <div className={style.iconNavigate}>
+                                    <ArrowForwardIcon/>
+                                </div>
+                            </div>
                         </div>
                         <div className={style.topContent}>
                             <div className={style.inStock}>
@@ -61,10 +106,57 @@ const MProduct = () => {
                                 <div className={style.icon}><FavoriteBorderIcon/></div>
                                 <div className={style.icon}><AllInclusiveOutlinedIcon/></div>
                             </div>
+                            <div className={style.vendor}>
+                                <div>
+                                    <span className={style.vendorTitle}>Vendor:</span>
+                                    <span className={style.nest}>NestMart</span>
+                                </div>
+                                <div>
+                                    <span className={style.vendorTitle}>SKU:</span>
+                                    <span className={style.nest}>FWM15VKT</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={style.description}>
+                        <div className={style.tabs}>
+                            <div className={clsx(style.tab, style.tabActive)}>Description</div>
+                            <div className={style.tab}>Additional info</div>
+                            <div className={style.tab}>Reviews (3)</div>
+                        </div>
+                        <div>
+                            <p>
+                                Uninhibited carnally hired played in whimpered dear gorilla koala depending and much yikes off far quetzal goodness and from for grimaced goodness unaccountably and meadowlark near unblushingly crucial scallop tightly neurotic hungrily some and dear furiously this apart.
+                            </p>
+                            <p>
+                                Spluttered narrowly yikes left moth in yikes bowed this that grizzly much hello on spoon-fed that alas rethought much decently richly and wow against the frequent fluidly at formidable acceptably flapped besides and much circa far over the bucolically hey precarious goldfinch mastodon goodness gnashed a jellyfish and one however because. 
+                            </p>
+                            <div className={style.descriptionTitle}>Packaging & Delivery</div>
+                            <p>
+                                Less lion goodness that euphemistically robin expeditiously bluebird smugly scratched far while thus cackled sheepishly rigid after due one assenting regarding censorious while occasional or this more crane went more as this less much amid overhung anathematic because much held one exuberantly sheep goodness so where rat wry well concomitantly.
+                            </p>
+
+                            <p>
+                                Scallop or far crud plain remarkably far by thus far iguana lewd precociously and and less rattlesnake contrary caustic wow this near alas and next and pled the yikes articulate about as less cackled dalmatian in much less well jeering for the thanks blindly sentimental whimpered less across objectively fanciful grimaced wildly some wow and rose jeepers outgrew lugubrious luridly irrationally attractively dachshund. 
+                            </p>
+                            <div className={style.descriptionTitle}>Suggested Use</div>
+                            <p>                                
+                                Refrigeration not necessary.
+                            </p>
+                            <p>Stir before serving</p>
+                            <div className={style.descriptionTitle}>
+                                Other Ingredients
+                            </div>
+                            <p>
+                                Organic raw pecans, organic raw cashews.
+                                This butter was produced using a LTG (Low Temperature Grinding) process.
+                                Made in machinery that processes tree nuts but does not process peanuts, gluten, dairy or soy.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div className={style.sidebar}>
+                    <CFilter/>
                     <CPopularTags/>
                 </div>
             </div>

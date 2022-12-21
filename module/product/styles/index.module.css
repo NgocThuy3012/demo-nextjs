@@ -25,7 +25,6 @@
 .content {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    align-items: center;
     gap: 24px;
 }
 
@@ -159,4 +158,107 @@
     color: #B6B6B6;
     padding: 16px;
     text-align: center;
+}
+
+.vendor {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 104px;
+}
+
+.vendorTitle {
+    color: #253D4E;
+}
+
+.nest {
+    color: #B6B6B6;
+}
+
+.thumb {
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.thumbItem {
+    background: #FFFFFF;
+    border: 1px solid #F2F3F4;
+    border-radius: 15px;
+    width: 117.6px;
+    height: 117.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbActive {
+    border: 1px solid #3BB77E;
+}
+
+.iconNavigate {
+    background: #F2F3F4;
+    border-radius: 30px;
+    padding: 14px;
+    color: #7E7E7E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navActive {
+    background: #3BB77E;
+    color: #FFFFFF;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    background: #FFFFFF;
+    border: 1px solid #F2F3F4;
+    box-shadow: 5px 5px 15px rgba(24, 24, 24, 0.05);
+    border-radius: 30px;
+    ont-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 15px;
+    letter-spacing: -0.0004em;
+    color: #B6B6B6;
+}
+
+.tabActive {
+    color: #3BB77E;
+}
+
+.description {
+    margin: 68px 0px 27px 0px;
+    padding: 52px;
+    background: #FFFFFF;
+    border: 1px solid #F2F3F4;
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7E7E7E;
+}
+
+.descriptionTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
 }
