@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import AllInclusiveOutlinedIcon from '@mui/icons-material/AllInclusiveOutlined';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
+import Rating from '@mui/material/Rating';
 
 const CProduct = ({product}) => {
     
@@ -22,12 +23,7 @@ const CProduct = ({product}) => {
             <div className={style.category}>Hodo Foods</div>
             <div className={style.productName}>{product.name}</div>
             <div className={style.ratings}>
-                {[...Array(product.rating)].map((x,i) => (
-                    <StarOutlinedIcon key={i} className={style.star}/>
-                ))}
-                {[...Array(5-product.rating)].map((x,i) => (
-                    <StarOutlinedIcon key={i} className={style.rating}/>
-                ))}
+                <Rating value={product.rating} className={style.star} readOnly emptyIcon={<StarOutlinedIcon style={{ opacity: 0.55 }} fontSize="inherit" />}/>
                 <span style={{marginLeft: '11px'}}>({product.rating})</span>
             </div>
             <div className={style.rating}>500 gram</div>

@@ -26,8 +26,8 @@ const CCheckbox = ({data}) => {
                 sx={{
                     color: `${checked ? '#253D4E':'#B6B6B6'}`,
                 }}
-                    label={data.name}
-                />
+                label={data.name}
+            />
         </>
     )
 }

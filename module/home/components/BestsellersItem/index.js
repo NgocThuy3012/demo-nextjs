@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import StarOutlinedIcon from '@mui/icons-material/StarOutlined';
-import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import style from './item.module.css'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import clsx from 'clsx'
+import Rating from '@mui/material/Rating';
 
 const Product = ({product}) => {
     return(
@@ -19,12 +19,7 @@ const Product = ({product}) => {
             <div className={style.category}>Hodo Foods</div>
             <div className={style.productName}>{product.name}</div>
             <div className={style.ratings}>
-                {[...Array(product.rating)].map((x,i) => (
-                    <StarOutlinedIcon key={i} className={style.star}/>
-                ))}
-                {[...Array(5-product.rating)].map((x,i) => (
-                    <StarOutlinedIcon key={i} className={style.rating}/>
-                ))}
+                <Rating value={product.rating} className={style.star} readOnly emptyIcon={<StarOutlinedIcon style={{ opacity: 0.55 }} fontSize="inherit" />}/>
                 <span style={{marginLeft: '11px'}}>({product.rating})</span>
             </div>
             <div className={style.rating}>500 gram</div>

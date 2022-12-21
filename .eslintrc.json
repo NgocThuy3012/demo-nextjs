@@ -5,7 +5,8 @@
     "plugin:react-hooks/recommended",
     "plugin:@next/next/recommended",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "eslint:recommended"
   ],
   "plugins": [
     "react-hooks",
@@ -16,9 +17,11 @@
     "react-hooks/exhaustive-deps": "warn",
     "import/first": "error",
     "import/no-amd": "error",
-    "import/no-anonymous-default-export": "warn",
+    "import/no-anonymous-default-export": "error",
     "import/no-webpack-loader-syntax": "error",
-    "import/default": "error"
+    "import/default": "error",
+    "import/named": "error",
+    "import/no-unassigned-import": "error"
   }
   
 }

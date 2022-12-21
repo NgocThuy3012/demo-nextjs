@@ -35,3 +35,27 @@ export const usedList = [
         name: "Smoothie",
     },
 ]
+
+export const popularItems = [
+    {
+        name: 'Nestle Original Coffee-Mate Coffee Creamer',
+        rating: 4,
+        price_new: 2.51,
+        price_old: 2.80,
+        img:'/img/pt1.svg',
+    },
+    {
+        name: 'Organic 100% Grassfed 85_15 Ground Beef',
+        rating: 4,
+        price_new: 2.51,
+        price_old: 2.80,
+        img:'/img/pt2.svg',
+    },
+    {
+        name: 'Naturally Flavored Salted Caramel Light Roast Coffee',
+        rating: 4,
+        price_new: 2.51,
+        price_old: 2.80,
+        img:'/img/pt3.svg',
+    },
+]

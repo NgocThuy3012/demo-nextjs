@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import style from './productinfo.module.css'
 import StarOutlinedIcon from '@mui/icons-material/StarOutlined';
-import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import { Rating } from '@mui/material';
 
 const CProductInfo = ({data}) => {
     return (
@@ -16,12 +16,7 @@ const CProductInfo = ({data}) => {
             <div>
                 <div className={style.productName}>{data.name}</div>
                 <div className={style.ratings}>
-                    {[...Array(data.rating)].map((x,i) => (
-                        <StarOutlinedIcon key={i} className={style.star}/>
-                    ))}
-                    {[...Array(5-data.rating)].map((x,i) => (
-                        <StarOutlinedIcon key={i} className={style.rating}/>
-                    ))}
+                    <Rating value={data.rating} className={style.star} readOnly emptyIcon={<StarOutlinedIcon style={{ opacity: 0.55 }} fontSize="inherit" />}/>
                     <span style={{marginLeft: '11px'}}>({data.rating})</span>
                 </div>
                 <div className={style.rating}>500 gram</div>

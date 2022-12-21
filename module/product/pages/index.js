@@ -14,6 +14,8 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CFilter from '../components/CFilter';
 import CAds from '../../../common/components/layout/CAds';
+import CPopular from '../components/CPopular';
+import CRelated from '../components/CRelated';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -155,9 +157,11 @@ const MProduct = () => {
                             </p>
                         </div>
                     </div>
+                    <CRelated/>
                 </div>
                 <div className={style.sidebar}>
                     <CFilter/>
+                    <CPopular/>
                     <CPopularTags/>
                     <CAds/>
                 </div>

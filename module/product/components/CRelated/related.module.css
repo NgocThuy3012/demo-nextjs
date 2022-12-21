@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+}
+
+.item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #253D4E;
+    margin: 0px 15px;
+}
+
+.active {
+    font-weight: 700;
+} 
+
+.banner {
+    background: #3BB77E url("../../../../public/img/banner.svg");
+    border-radius: 20px;
+    padding: 38px 0px 48px 48px;
+    grid-column: span 2 / span 2;
+    /* height: 512px; */
+    /* opacity: 0.8; */
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    position: relative;
+}
+
+.bestList {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 48px;
+}
+
+.bannerTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 41.2076px;
+    line-height: 48px;
+    letter-spacing: -0.0004em;
+    color: #253D4E;
+
+}
+
+.btnShop {
+    background: #FDC040;
+    box-shadow: 14px 14px 36px rgba(85, 85, 85, 0.1);
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    left: 48px;
+    bottom: 48px;
+    position: absolute;
+}
+
+.titleShopnow {
+    margin-right: 10px;
+}
