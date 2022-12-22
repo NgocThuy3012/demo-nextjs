@@ -1,9 +1,7 @@
-import MBlogDetail from "../../module/blog/page/BlogDetail"
+import MBlogDetail from "../../module/blog/page/BlogDetail";
 
 const BlogDetail = () => {
-    return (
-        <MBlogDetail/>
-    )
-}
+  return <MBlogDetail />;
+};
 
-export default BlogDetail
+export default BlogDetail;

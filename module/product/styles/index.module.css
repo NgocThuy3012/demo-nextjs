@@ -182,7 +182,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
+}
+
+.thumbImg {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    overflow: hidden;
+    width: 507px;
 }
 
 .thumbItem {

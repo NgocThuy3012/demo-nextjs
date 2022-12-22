@@ -16,10 +16,39 @@ import CFilter from '../components/CFilter';
 import CAds from '../../../common/components/layout/CAds';
 import CPopular from '../components/CPopular';
 import CRelated from '../components/CRelated';
+import React, { useRef, useState } from 'react';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
+const image = [
+    {
+        src: '/img/product.jpg'
+    },
+    {
+        src: '/img/thumb1.jpg'
+    },
+    {
+        src: '/img/thumb2.jpg'
+    },
+    {
+        src: '/img/thumb3.jpg'
+    },
+    {
+        src: '/img/thumb4.jpg'
+    },
+]
+
 const MProduct = () => {
+    const [index, setIndex] = useState(0)
+
+    const [img, setImg] = useState(0)
+
+    const handelThumb = (index) => {
+        setIndex(index)
+        setImg(index)
+    }
+
+   
     return (
         <div className={clsx(style.main, quicksand.className)}>
             <div className={style.breadcrumb}>
@@ -36,7 +65,7 @@ const MProduct = () => {
                             <div className={style.productImage}>
                                 <Image
                                     alt=''
-                                    src={'/img/product.jpg'}
+                                    src={image[index].src}
                                     width={586}
                                     height={421}
                                 />
@@ -45,37 +74,29 @@ const MProduct = () => {
                                 <div className={clsx(style.iconNavigate, style.navActive)}>
                                     <ArrowBackIcon/>
                                 </div>
-                                <div className={clsx(style.thumbActive, style.thumbItem)}>
+                                {/* <div className={clsx(style.thumbActive, style.thumbItem)}>
                                     <Image
                                         alt=''
                                         src={'/img/thumb1.jpg'}
                                         width={106}
                                         height={84}
                                     />
-                                </div>
-                                <div className={style.thumbItem}>
-                                    <Image
-                                        alt=''
-                                        src={'/img/thumb2.jpg'}
-                                        width={106}
-                                        height={84}
-                                    />
-                                </div>
-                                <div className={style.thumbItem}>
-                                    <Image
-                                        alt=''
-                                        src={'/img/thumb3.jpg'}
-                                        width={106}
-                                        height={84}
-                                    />
-                                </div>
-                                <div className={style.thumbItem}>
-                                    <Image
-                                        alt=''
-                                        src={'/img/thumb4.jpg'}
-                                        width={106}
-                                        height={84}
-                                    />
+                                </div> */}
+                                <div className={style.thumbImg}>
+                                    {image.map((item, index)=> (
+                                        <div 
+                                            className={clsx({[style.thumbActive]: index == img}, style.thumbItem)} 
+                                            key={index}
+                                            onClick = {()=>handelThumb(index)}
+                                        >
+                                            <Image
+                                                alt=''
+                                                src={item.src}
+                                                width={106}
+                                                height={84}
+                                            />
+                                        </div>
+                                    ))}
                                 </div>
                                 <div className={style.iconNavigate}>
                                     <ArrowForwardIcon/>
