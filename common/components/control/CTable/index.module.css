@@ -1,0 +1,15 @@
+.header {
+  background: #f5f5f5;
+  border-radius: 15px;
+  display: table-row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tableCell {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #253d4e;
+}
